@@ -2,8 +2,6 @@
 #include <iostream>
 //lectura de archivos
 #include <fstream>
-//para usar la listas
-#include <list>
 //para usar los aceentos.
 #include <locale.h>
 
@@ -14,7 +12,7 @@ using namespace std;
 int main() {
 	//para poder usar los acentos.
   setlocale(LC_ALL, "");
-  list<int> letras;
+  
   ifstream in("quijote.txt");
   string s, line;
   int cont = 0; 
@@ -22,7 +20,7 @@ int main() {
   while(getline(in, line))
     s += line;
     
-	cout<<s<<endl;
+	
     int num = sizeof caracter;
    	
     for(int i = 0; i < num;i++)
